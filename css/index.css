@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 18px;
+    background-color: var(--gray);
+}
+
+.nav__ul{
+    display: flex;
+}
+
+.nav__ul > li{
+    padding-right: 60px;
+}
+
+.screen-columns{
+    height: 980px;
+    box-sizing: border-box;
+}
+
+.screen-columns:first-child{
+    background-image: url("../img/earlgrey.jpg");
+    background-size: cover;
+}
+
+.screen-columns:nth-child(2n){
+    background-color: var(--gray);
+    color: var(--dark-gray);
+    padding: 40px;
+}
+
+.screen-columns:nth-child(2n+1){
+    background-color: #001516;
+    color: white;
+}
+
+.screen-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 40px;
+    width: 42%;
+}
+
+.screen-title h2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+
+.screen-title p, .screen-subtitle P{
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.screen-order{
+    padding: 15px 30px;
+    background-color: var(--gray);
+    border-radius: 50px;
+    font-weight: 600;
+    width: 102px;
+}
+
+
+.screen-alt-title{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 132px;
+}
+
+.screen-alt-title h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+.screen-list{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.screen-row{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 32px;
+}
+
+.screen-caption{
+    width: 350px;
+    object-fit: cover;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.screen-caption__figure{
+    border: 5px solid var(--dark-gray);
+}
+
+.screen-content h3{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 600;
+}
