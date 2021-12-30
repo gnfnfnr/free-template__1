@@ -18,6 +18,7 @@ header{
 .screen-columns{
     height: 980px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .screen-columns:first-child{
@@ -55,17 +56,17 @@ header{
 
 .screen-footer{
     background-color: black;
-    height: 400px;
     box-sizing: border-box;
     color: white;
-    padding: 100px;
+    padding-top: 60px;
 }
 
 .screen-container{
     width: 70%;
-    margin: 0 auto;
-    display: flex;
     height: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     align-items: center;
 }
 
@@ -83,10 +84,6 @@ header{
     margin-bottom: 70px;
 }
 
-.screen-title{
-    width: 70%;
-}
-
 .screen-title h2{
     font-size: 50px;
     font-weight: 600;
@@ -102,7 +99,7 @@ header{
 .screen-title p{
     font-size: 16px;
     margin-bottom: 45px;
-    width: 60%;
+    width: 80%;
     line-height: 1.4;
 }
 
@@ -217,13 +214,15 @@ header{
 }
 
 .screen-form{
-    width: 900px;
+    width: 1000px;
     background-color: white;
     height: 55px;
     border-radius: 34px;
     display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .screen-form > :nth-child(n){
@@ -235,13 +234,15 @@ header{
 }
 
 .screen-form > input{
-    width: 70%;
+    width: 100%;
+    margin-right: 170px;
 }
 
 .screen-form > button{
-    width: 26%;
     background-color: var(--dark-gray);
     font-weight: 600;
+    position: absolute;
+    right: 0;
 }
 
 .footer-container{
@@ -271,6 +272,15 @@ header{
     padding-bottom: 30px;
 }
 
-.footer-rows{
+.footer-rows, .footer-title{
     padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+.footer-rows{
+    width: 33%;
+}
+
+.screen-order, .nav__icon, button, .footer-icons{
+    cursor: pointer;
 }
