@@ -27,11 +27,6 @@
     .screen-container{
         grid-template-columns: none;
     }
-
-    .screen-caption {
-        width: 250px;
-        height: 250px;
-    }
     
     .screen-main p {
         width: 100%;
@@ -46,6 +41,15 @@
     
      .screen-form{
          width: 90%;
+     }
+
+     .screen-caption{
+         width: 300px;
+         height: 300px;
+     }
+
+     .screen-row{
+         width: 100%;
      }
 }
 

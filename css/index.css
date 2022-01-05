@@ -16,7 +16,7 @@ header{
 }
 
 .screen-columns{
-    height: 980px;
+    min-height: 980px;
     box-sizing: border-box;
     position: relative;
 }
@@ -136,14 +136,17 @@ header{
 .screen-list{
     width: 70%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .screen-row{
     width: 33.33%;
-    float: left;
     text-align: center;
     box-sizing: border-box;
     padding: 0 32px;
+    padding-bottom: 55px;
 }
 
 .screen-caption{
@@ -184,7 +187,7 @@ header{
     padding-top: 140px;
 }
 
-.screen-exp p {
+.screen-exp p{
     font-size: 18px;
     font-weight: 600;
     margin: 50px auto;
